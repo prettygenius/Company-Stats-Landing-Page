@@ -1,0 +1,45 @@
+body{
+    background-color:#000;
+    color:#fff;
+  
+    
+}
+html body{
+  box-sizing: border-box;
+  background-color: rgb(17, 7, 41);
+  height: 100%;
+  padding: 10px;
+  margin: 0;
+}
+#insight{
+    color:rgb(87, 45, 129)
+
+}
+
+.container{
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 100px 50px  100px;
+    
+    grid-template-areas:
+    "one one one photo photo photo"
+    "main main main photo photo photo"
+    "foot foot foot photo photo photo" ;
+    
+    
+}
+
+.sec-one{
+  grid-area: one;
+}
+.main-content{
+  grid-area: main;
+}
+footer{
+  grid-area: foot;
+}
+#myPhoto{
+  grid-area: photo
+}
+

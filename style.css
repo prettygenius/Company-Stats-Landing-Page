@@ -1,45 +1,90 @@
-body{
-    background-color:#000;
-    color:#fff;
-  
-    
-}
-html body{
-  box-sizing: border-box;
-  background-color: rgb(17, 7, 41);
-  height: 100%;
-  padding: 10px;
-  margin: 0;
-}
-#insight{
-    color:rgb(87, 45, 129)
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 
 }
+
+html,body{
+    background: hsl(233, 47%, 7%);
+    height: 100%;
+
+    
+}
+
+
 
 .container{
-    display: grid;
-    grid-gap: 25px;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: 100px 50px  100px;
-    
-    grid-template-areas:
-    "one one one photo photo photo"
-    "main main main photo photo photo"
-    "foot foot foot photo photo photo" ;
-    
+    background: hsl(244, 38%, 16%);
+    font-family: 'Inter', sans-serif;
+    margin: 150px 200px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+
+}
+
+
+
+section > h1{
+    color: hsl(0, 0%, 100%); 
+    font-size: 30px;
+    padding: 15px;
+    margin: 10px 50px;
+}
+
+section > h4{
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
+.stats-section{
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 30px;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
     
 }
 
-.sec-one{
-  grid-area: one;
+.stats-container{
+list-style: none;
+color: white;
+font-size: 20px;
+font-weight: bold;
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+margin-left: 50px;
 }
-.main-content{
-  grid-area: main;
+.insights{
+
+    color: hsl(277, 64%, 61%);
 }
-footer{
-  grid-area: foot;
+.companies{
+    margin: 50px 15px;
+    color: hsl(277, 64%, 61%);
+    
 }
-#myPhoto{
-  grid-area: photo
+
+.templates{
+    margin: 50px 25px;
+    color: hsl(277, 64%, 61%);
 }
+.queries{
+    margin: 50px 35px;
+    color: hsl(277, 64%, 61%);
+}
+
+
+img{
+    margin: 1px;
+    border-radius: 5px;
+    height: 100%;
+    
+}
+
 
